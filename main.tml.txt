@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLCDEMY</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="images/logo.png" alt="SOLCDEMY" class="logo">
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="#">과목</a>
+                <!-- 추가: 과목 하위 메뉴 -->
+                <ul>
+                    <li><a href="kor.html">국어</a></li> <!-- 국어 페이지로 이동 -->
+                    <li><a href="math.html">수학</a></li>
+                    <li><a href="eng.html">영어</a></li>
+                    <li><a href="soc.html">사회</a></li>
+                    <li><a href="sci.html">과학</a></li>
+                </ul>
+            </li>
+            <li><a href="#">학습자료</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="qna.html">자주 묻는 질문</a></li>
+        </ul>
+    </nav>
+    <!-- Authentication Buttons -->
+    <div class="auth-buttons">
+        <a href="login.html"><button type="submit" id="loginButton" >로그인</button></a>
+        <a href="sign.html"><button type="submit" id="signupButton">회원가입</button></a>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="section" id="korean-section">
+        <h2>국어 선생님</h2>
+        <img src="images/kgd.png" >
+        <p>워씽하오</p>
+        <p>#재미 국어  &nbsp; &nbsp;  #핵심 공략</p>
+    </div>
+
+
+    <div class="section" id="korean-section">
+        <h2>수학 선생님</h2>
+        <img src="images/ogh.jpg" >
+        <p>수학이 이렇게 쉬워도 되는거야?</p>
+        <p>#재미 수학  &nbsp; &nbsp;  #핵심 공략</p>
+    </div>
+
+
+    <div class="section" id="korean-section">
+        <h2>영어 선생님</h2>
+        <img src="images/pjg.jpg" >
+        <p>남다른 영어 마스터!</p>
+        <p>#재미 영어  &nbsp; &nbsp;  #핵심 공략</p>
+    </div>
+
+    <div class="section" id="korean-section">
+        <h2>사회 선생님</h2>
+        <img src="images/JJJ.png" >
+        <p>흐름으로 이해하는 사회!</p>
+        <p>#재미 사회  &nbsp; &nbsp;  #핵심 공략</p>
+    </div>
+
+
+    <div class="section" id="korean-section">
+        <h2>과학 선생님</h2>
+        <img src="images/ngb.jpg" >
+        <p>기범쌤과 함께하는 달콤한 과학!</p>
+        <p>#재미 과학  &nbsp; &nbsp;  #핵심 공략</p>
+    </div>
+
+
+</div>
+
+<!-- Footer -->
+<footer class="footer-container">
+    <div class="footer-info">
+        <p>(10234)서울시 종로구 관철동</p>
+        <p>SOLCDEMY Tel : 02-, 010-5115-9849, Fax.02-1</p>
+        <p>COPYRIGHT © 2023 SOLCDEMY. ALL RIGHTS RESERVED.</p>
+    </div>
+</footer>
+</body>
+</html>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>

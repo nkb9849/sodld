@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #003478;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    height: 50px;
+}
+
+.header .auth-buttons button {
+    padding: 5px 10px;
+    background-color: #004990;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 100px; /* 메뉴 항목 사이의 간격 조절 */
+    position: relative;
+}
+
+.header nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #003478;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header nav ul li:hover ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header nav ul li ul li {
+    display: inline-block;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.header .logo {
+    height: 50px;
+    font-size: 40px; /* SOLCADEMY 텍스트의 크기 */
+}
+
+.header .logo {
+    padding-top: 10px; /* 위쪽 여백 설정 */
+    padding-bottom: 10px; /* 아래쪽 여백 설정 */
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px; /* 맨 위 베너 글자 크기 원하는 크기로 조절 */
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.header nav ul li ul li:first-child {
+    margin-left: 10px; /* 국어 앞에 있는 여백 설정 */
+}
+
+.header .auth-buttons button {
+    font-size: 18px; /* 버튼 안의 글자 크기 */
+    padding: 10px 20px; /* 버튼 내부 여백 */
+}
+
+.header .auth-buttons button + button {
+    margin-left: 20px; /* 버튼 사이의 간격 */
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    margin-bottom: 20px;
+    border: 1px solid rgb(150, 150, 150);
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.section:last-child {
+    margin-right: 0;
+}
+
+.section h2 {
+    color: #003478;
+}
+
+.section p {
+    margin-bottom: 10px;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.section a {
+    color: #004990;
+    text-decoration: underline;
+}
+
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #003478;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container .footer-logo {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.footer-container .footer-info {
+    display: inline-block;
+}
+
+#korean-section p {
+    color: blue; /* 텍스트의 색상을 파란색으로 설정합니다 */
+    font-size: 20px; /* 텍스트의 크기를 18px로 설정합니다 */
+    font-weight: bold; /* 텍스트를 굵게 설정합니다 */
+    
+}
+
+#math-section p {
+    color: blue; /* 텍스트의 색상을 파란색으로 설정합니다 */
+    font-size: 20px; /* 텍스트의 크기를 18px로 설정합니다 */
+    font-weight: bold; /* 텍스트를 굵게 설정합니다 */
+    
+}
+
+/* main.css 파일에 추가 */
+
+/* 수학 섹션 이미지 크기 조정 */
+#math-section img {
+    max-width: 700%; /* 부모 요소에 맞게 이미지 크기 조정 */
+    height: auto;    /* 가로 세로 비율 유지 */
+}
+
+
+#english-section p {
+    color: blue; /* 텍스트의 색상을 파란색으로 설정합니다 */
+    font-size: 20px; /* 텍스트의 크기를 18px로 설정합니다 */
+    font-weight: bold; /* 텍스트를 굵게 설정합니다 */
+    
+}
+
+#social-section p {
+    color: blue; /* 텍스트의 색상을 파란색으로 설정합니다 */
+    font-size: 20px; /* 텍스트의 크기를 18px로 설정합니다 */
+    font-weight: bold; /* 텍스트를 굵게 설정합니다 */
+    
+}
+
+#science-section p {
+    color: rgb(0, 0, 0); /* 텍스트의 색상을 파란색으로 설정합니다 */
+    font-size: 20px; /* 텍스트의 크기를 18px로 설정합니다 */
+    font-weight: bold; /* 텍스트를 굵게 설정합니다 */
+    
+}

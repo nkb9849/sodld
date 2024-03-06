@@ -1,0 +1,62 @@
+// 과목 메뉴에 마우스가 올라갔을 때
+document.querySelector('.header nav ul li').addEventListener('mouseover', function() {
+    // 하위 메뉴를 표시합니다.
+    this.querySelector('ul').style.display = 'flex';
+});
+
+// 과목 메뉴에서 마우스가 벗어났을 때
+document.querySelector('.header nav ul li').addEventListener('mouseout', function() {
+    // 하위 메뉴를 숨깁니다.
+    this.querySelector('ul').style.display = 'none';
+});
+
+// 과목 링크 클릭 시 해당 과목 섹션만 표시하는 함수
+document.querySelectorAll('.subject-link').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // 링크의 기본 동작 취소
+        var subject = this.getAttribute('data-subject');
+        showSection(subject + '-section');
+    });
+});
+
+// 섹션을 표시하거나 숨기는 함수
+function showSection(sectionId) {
+    document.querySelectorAll('.section').forEach(function(section) {
+        if (section.id === sectionId) {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+}
+
+// 국어 메뉴 클릭 시 국어 섹션만 표시하는 함수
+document.getElementById('korean-link').addEventListener('click', function(event) {
+    event.preventDefault(); // 링크의 기본 동작 취소
+    showSection('korean-section');
+});
+
+// 수학 메뉴 클릭 시 수학 섹션만 표시하는 함수
+document.getElementById('math-link').addEventListener('click', function(event) {
+    event.preventDefault(); // 링크의 기본 동작 취소
+    showSection('math-section');
+});
+
+// 영어 메뉴 클릭 시 영어 섹션만 표시하는 함수
+document.getElementById('english-link').addEventListener('click', function(event) {
+    event.preventDefault(); // 링크의 기본 동작 취소
+    showSection('english-section');
+});
+
+// 사회 메뉴 클릭 시 사회 섹션만 표시하는 함수
+document.getElementById('social-link').addEventListener('click', function(event) {
+    event.preventDefault(); // 링크의 기본 동작 취소
+    showSection('social-section');
+});
+
+// 과학 메뉴 클릭 시 과학 섹션만 표시하는 함수
+document.getElementById('science-link').addEventListener('click', function(event) {
+    event.preventDefault(); // 링크의 기본 동작 취소
+    showSection('science-section');
+});
+

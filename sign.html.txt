@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="sign.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+</head>
+
+<body>
+
+<div class="container" id="container">
+  <div class="form-container sign-in-container">
+    <form action="#">
+      <h1>회원가입</h1>
+      <span> </span>
+      <input type="name" placeholder="이름" />
+      <input type="date" placeholder="YYYY/MM/DD" />
+      <select name="role" id="role">
+        <option value="student">학생</option>
+        <option value="parent">학부모</option>
+        <option value="teacher">선생님</option>
+      </select>
+      <input type="email" placeholder="이메일" />
+      <input type="password" placeholder="비밀번호" />
+      <input type="password" placeholder="비밀번호 확인" />
+      
+      <button>완료</button>
+    </form>
+  </div>
+
+
+<script src="sign.js" charset="utf-8"></script>
+</body>
+
+</html>

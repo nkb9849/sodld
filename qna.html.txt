@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q&A 페이지</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  .question {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .question h2 {
+    color: #000; /* 진한 검정색으로 변경 */
+    margin-bottom: 10px;
+  }
+
+  .answer {
+    color: #777;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>자주 묻는 질문</h1>
+  
+  <!-- 첫 번째 질문 -->
+  <div class="question">
+    <h2>질문 1: 웹사이트에 어떻게 가입하나요?</h2>
+    <p class="answer">회원 가입 페이지에서 이름, 이메일 및 비밀번호를 입력하고 '가입하기' 버튼을 클릭하세요.</p>
+  </div>
+  
+  <!-- 두 번째 질문 -->
+  <div class="question">
+    <h2>질문 2: 비밀번호를 잊어버렸어요. 어떻게 해야 하나요?</h2>
+    <p class="answer">로그인 페이지에서 '비밀번호 재설정' 링크를 클릭하여 비밀번호를 재설정할 수 있습니다.</p>
+  </div>
+  
+  <!-- 세 번째 질문 -->
+  <div class="question">
+    <h2>질문 3: 계정을 삭제하려면 어떻게 해야 하나요?</h2>
+    <p class="answer">고객 서비스에 문의하여 계정 삭제 요청을 제출하세요.</p>
+  </div>
+
+  <!-- 네 번째 질문 -->
+  <div class="question">
+    <h2>질문 4: 수업은 어떻게 진행되나요?</h2>
+    <p class="answer">수업은 강사가 녹화해둔 강의를 과목에 맞게 올려두었습니다.</p>
+  </div>
+
+  <!-- 다섯 번째 질문 -->
+  <div class="question">
+    <h2>질문 5: 강의 자료는 어떻게 제공되나요?</h2>
+    <p class="answer">강의 자료는 학습자료에 전 주에 미리 업로드 되어 있습니다.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLCDEMY</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* 추가된 스타일 */
+        .video-container {
+            margin-bottom: 20px;
+        }
+        .video-container video {
+            display: none;
+            width: 100%;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="main.html"><img src="images/logo.png" alt="SOLCDEMY" class="logo"></a>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">과목</a>
+                <!-- 추가: 과목 하위 메뉴 -->
+                <ul>
+                    <li><a href="kor.html">국어</a></li> <!-- 국어 페이지로 이동 -->
+                    <li><a href="math.html">수학</a></li>
+                    <li><a href="eng.html">영어</a></li>
+                    <li><a href="soc.html">사회</a></li>
+                    <li><a href="sci.html">과학</a></li>
+                </ul>
+            </li>
+            <li><a href="#">학습자료</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자주 묻는 질문</a></li>
+        </ul>
+    </nav>
+    <!-- Authentication Buttons -->
+    <div class="auth-buttons">
+        <a href="login.html"><button type="submit" id="loginButton" >로그인</button></a>
+        <a href="sign.html"><button type="submit" id="signupButton">회원가입</button></a>
+    </div>
+</div>
+
+<div class="main-content">
+    <!-- 자음 익히기 -->
+    <div class="section" id="consonants-section">
+        <h2>자음 익히기</h2>
+        <div class="video-container">
+            <p>자음 익히기 동영상을 시청하세요.</p>
+            <video controls>
+                <source src="video/kibumvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- 모음 익히기 -->
+    <div class="section" id="vowels-section">
+        <h2>모음 익히기</h2>
+        <div class="video-container">
+            <p>모음 익히기 동영상을 시청하세요.</p>
+            <video controls>
+                <source src="video/kibumvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- 쓰기 -->
+    <div class="section" id="writing-section">
+        <h2>쓰기</h2>
+        <div class="video-container">
+            <p>쓰기 동영상을 시청하세요.</p>
+            <video controls>
+                <source src="video/kibumvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- 소리 내어 읽기 -->
+    <div class="section" id="reading-section">
+        <h2>소리 내어 읽기</h2>
+        <div class="video-container">
+            <p>소리 내어 읽기 동영상을 시청하세요.</p>
+            <video controls>
+                <source src="video/kibumvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-container">
+    <div class="footer-info">
+
+        <p>(10234)서울시 종로구 관철동</p>
+        <p>SOLCDEMY Tel : 02-, 010-5115-9849, Fax.02-1</p>
+        <p>COPYRIGHT © 2023 SOLCDEMY. ALL RIGHTS RESERVED.</p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    // 각 섹션을 클릭했을 때 동영상 보이게 하기
+    document.getElementById('consonants-section').addEventListener('click', function() {
+        var video = this.querySelector('video');
+        video.style.display = (video.style.display === 'none' || video.style.display === '') ? 'block' : 'none';
+    });
+
+    document.getElementById('vowels-section').addEventListener('click', function() {
+        var video = this.querySelector('video');
+        video.style.display = (video.style.display === 'none' || video.style.display === '') ? 'block' : 'none';
+    });
+
+    document.getElementById('writing-section').addEventListener('click', function() {
+        var video = this.querySelector('video');
+        video.style.display = (video.style.display === 'none' || video.style.display === '') ? 'block' : 'none';
+    });
+
+    document.getElementById('reading-section').addEventListener('click', function() {
+        var video = this.querySelector('video');
+        video.style.display = (video.style.display === 'none' || video.style.display === '') ? 'block' : 'none';
+    });
+</script>
+
+</body>
+</html>
