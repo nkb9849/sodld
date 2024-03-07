@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습자료</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            margin-bottom: 20px;
+        }
+
+        .category h2 {
+            margin-bottom: 10px;
+        }
+
+        .category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .category ul li {
+            margin-bottom: 10px;
+        }
+
+        .file-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .file-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>학습자료</h1>
+
+        <!-- 국어 학습자료 -->
+        <div class="category">
+            <h2>국어</h2>
+            <ul>
+                <li><a class="file-link" href="#">국어 문법 강의 자료(PDF)</a></li>
+                <li><a class="file-link" href="#">국어 독해 연습 문제집(PDF)</a></li>
+                <li><a class="file-link" href="#">국어 시 해석 영상(MP4)</a></li>
+            </ul>
+        </div>
+
+        <!-- 수학 학습자료 -->
+        <div class="category">
+            <h2>수학</h2>
+            <ul>
+                <li><a class="file-link" href="#">수학 공식 시트(PDF)</a></li>
+                <li><a class="file-link" href="#">수학 문제집(PDF)</a></li>
+                <li><a class="file-link" href="#">수학 강의 영상(MP4)</a></li>
+            </ul>
+        </div>
+
+        <!-- 영어 학습자료 -->
+        <div class="category">
+            <h2>영어</h2>
+            <ul>
+                <li><a class="file-link" href="#">영어 문법 강의 자료(PDF)</a></li>
+                <li><a class="file-link" href="#">영어 독해 연습 문제집(PDF)</a></li>
+                <li><a class="file-link" href="#">영어 강의 영상(MP4)</a></li>
+            </ul>
+        </div>
+
+          <!-- 사회 학습자료 -->
+          <div class="category">
+            <h2>사회</h2>
+            <ul>
+                <li><a class="file-link" href="#">사회 중간고사 강의 자료(PDF)</a></li>
+                <li><a class="file-link" href="#">사회 중간고사 문제집(PDF)</a></li>
+                <li><a class="file-link" href="#">사회 중간고사 해설 영상(MP4)</a></li>
+            </ul>
+        </div>
+
+
+        <!-- 과학 학습자료 -->
+        <div class="category">
+            <h2>과학</h2>
+            <ul>
+                <li><a class="file-link" href="#">과학 실험 보고서(PDF)</a></li>
+                <li><a class="file-link" href="#">과학 발표 자료(PPT)</a></li>
+                <li><a class="file-link" href="#">과학 실험 동영상(MP4)</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
